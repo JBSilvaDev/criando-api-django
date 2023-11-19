@@ -1,0 +1,23 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Matriculas",
+    "dateExported": "2023-11-19T07:36:00.444Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "b60cd4f1-806a-4927-a05a-638b5c4559d9",
+            "colId": "82b8c1a2-f238-49b9-ae8d-501122711c73",
+            "containerId": "",
+            "name": "GET",
+            "url": "http://127.0.0.1:8000/matricula/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-19T06:32:43.332Z",
+            "modified": "2023-11-19T06:32:48.395Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

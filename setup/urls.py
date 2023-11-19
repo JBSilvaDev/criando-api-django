@@ -15,12 +15,22 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import include, path
+from rest_framework import routers
+from escola.views import *
 
-
-from escola.views import alunos
+# Configura rotas para exibição do JSON
+router = routers.DefaultRouter()
+# Prefixo, Classe exibição da view, Nome da base (classe model)
+router.register("alunos", AlunosViewSet, basename="Alunos")
+router.register("cursos", CursosViewSet, basename="Cursos")
+router.register("matricula", MatriculaViewSet, basename="Matricula")
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("alunos/", alunos),
+    # Inclui as rotas determinadas em router
+    path("", include(router.urls)),
+    # Rota com parametro a ser enviado para classe de view, configura para a classe ser apenas de visualização
+    path("aluno/<int:pk>/matriculas/", ListaMatriculaAlunosView.as_view()),
+    path("curso/<int:pk>/matriculas/", ListaAlunosMatriculadoEmCursoView.as_view()),
 ]

@@ -1,0 +1,44 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Matricula/Aluno",
+    "dateExported": "2023-11-19T07:36:05.036Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "42230791-0dc3-486a-b44f-1549227fe794",
+            "colId": "85ee36b4-d6eb-49b7-a9b7-0a5a35e2b2b8",
+            "containerId": "",
+            "name": "GET Aluno>Curso",
+            "url": "http://127.0.0.1:8000/aluno/2/matriculas/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-19T06:53:13.626Z",
+            "modified": "2023-11-19T07:22:39.664Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "jbsilva",
+                    "password": "dylan2208"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "bcd5874c-36fc-4374-83d1-d8592510e443",
+            "colId": "85ee36b4-d6eb-49b7-a9b7-0a5a35e2b2b8",
+            "containerId": "",
+            "name": "GET Curso>Aluno",
+            "url": "http://127.0.0.1:8000/curso/2/matriculas/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-11-19T07:07:38.180Z",
+            "modified": "2023-11-19T07:12:32.326Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

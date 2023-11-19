@@ -1,0 +1,82 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Alunos",
+    "dateExported": "2023-11-19T07:35:19.397Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "05a9af12-890b-4a0d-9478-2c1710190542",
+            "colId": "2cc1526c-7c41-4550-9260-f4d5ac6f2a80",
+            "containerId": "",
+            "name": "GET",
+            "url": "http://127.0.0.1:8000/alunos/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-11-19T06:12:23.744Z",
+            "modified": "2023-11-19T07:20:11.562Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "basic",
+                "basic": {
+                    "username": "jbsilva",
+                    "password": "dylan2208"
+                }
+            },
+            "tests": []
+        },
+        {
+            "_id": "d3be2287-d182-4c6e-9fab-e0cd8327fe50",
+            "colId": "2cc1526c-7c41-4550-9260-f4d5ac6f2a80",
+            "containerId": "",
+            "name": "POST",
+            "url": "http://127.0.0.1:8000/alunos/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-11-19T06:13:05.377Z",
+            "modified": "2023-11-19T06:16:33.824Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"nome\": \"Aluno5\",\n    \"rg\": \"555555555\",\n    \"cpf\": \"55555555555\",\n    \"data_nascimento\": \"2023-10-19\"\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d049f6b5-2ea0-4aeb-a1be-4e779510c4c4",
+            "colId": "2cc1526c-7c41-4550-9260-f4d5ac6f2a80",
+            "containerId": "",
+            "name": "PUT",
+            "url": "http://127.0.0.1:8000/alunos/4/",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-11-19T06:14:20.928Z",
+            "modified": "2023-11-19T07:21:55.858Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Aluno4\",\n  \"rg\": \"444444444\",\n  \"cpf\": \"44444444444\",\n  \"data_nascimento\": \"2023-11-01\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b943b7ad-752e-4cff-92b0-eaba6979de59",
+            "colId": "2cc1526c-7c41-4550-9260-f4d5ac6f2a80",
+            "containerId": "",
+            "name": "DELETE",
+            "url": "http://127.0.0.1:8000/alunos/5/",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-11-19T06:15:01.071Z",
+            "modified": "2023-11-19T06:17:35.711Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
